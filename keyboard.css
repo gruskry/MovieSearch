@@ -1,0 +1,63 @@
+.keyboard-area {
+  width: 1060px;
+  padding: 5px 0;
+  user-select: none;
+  background-color: #36505d00;
+  display: block;
+  transition: all 1s linear;
+  border: 5px solid #00d06694;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.visuallyhidden {
+  opacity: 0;
+}
+
+
+
+.keyboard__key {
+  width: auto;
+  max-width: 210px;
+  min-width: 64px;
+  min-height: 60px;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 20px;
+  color: black;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: border-radius 0.3s, background 0.2s;
+  border: 2px solid black;
+}
+
+.wide {
+  padding: 15px 180px;
+}
+
+.keyboard__key:hover {
+  background-color: #00d06694;
+  border: 2px solid white;
+}
+
+.keyboard__key:active {
+  border-radius: 30px;
+  background-color: #00d06694;
+  border: 2px solid white;
+}
+
+.physical-key-press {
+  border-radius: 30px;
+  background-color: #00d06694;
+  border: 2px solid white;
+}
+
+.enter {
+  width: 150px;
+}

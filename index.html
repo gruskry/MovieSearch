@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieSearch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="keyboard.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-logo">MovieSearch</h1> 
+    </header>
+    <main class="main">
+        <form class="search">       
+            <input class="search-input" id="input_form" type="text" placeholder="Search movie" autocomplete="off" autofocus >
+            <button class="search-btn" >
+                <img class="search-icon" src="img/search.svg">
+                <span class="btn-text">Search</span>
+            </button>
+            <span data-name="Clear" class="search-clear tooltip">
+                <img class="search-icon" src="img/clear.png">
+            </span>
+            
+            <span data-name="Keyboard" class="search-tia tooltip" id="search-tia-id"></span>  
+        </form>
+        <p class="notFound"></p>
+        <div class="swiper-container">  
+        </div>
+        <div class="load">
+            <div id="cssload-pgloading">
+                <div class="cssload-loadingwrap">
+                    <ul class="cssload-bokeh">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+      <a class="rsapp" href="rs.school">RSapp</a>  
+      <a class="github" href="github.com/gruskry">GRUSKRY</a>
+    </footer>
+    <template id="template-card">
+        <div class="slide">
+            <p class = "film-name" href=""></p>
+            <img class = "film-poster">
+            <p class = "film-date"></p>
+            <p class = "film-rating"></p>
+        </div>
+    </template>
+    <script src="index.js"></script>
+    <script src="keyboard.js"></script>   
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</body>
+</html>
